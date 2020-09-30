@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>8-Bit CPU project!</title>
+  </head>
+  <body>
+    <header>
+      <h1>8-Bit CPU project!</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p>Jump to certain steps here!</p>
+      <a href="#step1">Step 1</a> <br>
+      <a href="#step2">Step 2</a>
+    </header>
+    <h2>The start</h2>
+    <p>I began by getting inspiration and basic knowledge of mechatronics from my NMSU ET 182 course. Once
+    I had my basics down I immiedietly threw myself into the very advanced portion of mechatronics, which
+    was very confusing but I was able to learn about each chip I used. <strong>Ben Eater</strong> is very
+    well known for writing thorough guides as well as explaining techonology step by step. I followed the
+    guide that was involving the 8 bit CPU and below I made a table with the chips I used for a specific module.
+    <br><br><b>Note that each chip will have a link to the datasheet for more specific information!</b></p>
+
+    <h2 id="step1">Step 1: Clock Module</h2>
+    <em>Chips used for this module.</em>
+    <table>
+      <tr>
+        <th></th>
+        <th><a href="https://www.futurlec.com/74LS/74LS04.shtml" target="_blank">74LS04(NOT)</a></th>
+        <th><a href="https://www.futurlec.com/74LS/74LS08.shtml" target="_blank">74LS08(AND)</a></th>
+        <th><a href="https://www.futurlec.com/74LS/74LS32.shtml" target="_blank">74LS32(OR)</a></th>
+        <th><a href="https://www.electroschematics.com/wp-content/uploads/2009/12/tlc555-datasheet.pdf" target="_blank">555 timer</a></th>
+      </tr>
+      <tr>
+        <th>Input(s)</th>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <th>Output(s)</th>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>Vcc min/max</th>
+        <td>4.75V/7V</td>
+        <td>4.75V/7V</td>
+        <td>4.75V/7V</td>
+        <td>2V/15V</td>
+      </tr>
+      <tr>
+        <th>Combinations</th>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>N/A</td>
+      </tr>
+    </table>
+
+    <picture>
+      <source media="(min-width: 480px)"
+               srcset="img/200_cm.jpg 1200w,
+                       img/100_cm.jpg 800w"
+               sizes="60vw">
+      <img src="img/50_cm.jpg" alt="Clock Module">
+    </picture>
+    <em>Figure 1 - Clock Module</em>
+
+    <p>In order to make a CPU, you need a clock and this module allows you to choose between a
+    <b>monostable</b> clock or a <b>astable</b> clock with the a <b>bistable</b> circuit controlling
+    the switch between the two types of clocks. The definition of a <b>bistable</b> circuit is that it
+    is either on or it is off so, the state is stable. The definition of a <b>astable</b> circuit is that
+    the state on or off is unstable; constantly switching between both on and off states. A <b>monostable</b>
+    circuit means that when pressed it turns on but when let go it turns off, so the state is only on and stable
+    depending on how long you trigger its state. <br><br>Below I will post a video of my clock module in action.</p>
+
+    <iframe src="https://www.youtube.com/embed/S-I7iEo5CSE" width="420" height="315" allowfullscreen></iframe>
+
+    <p>In the video the red light indicates you have entered <b>monostable</b> mode which I refer to as manual mode because
+    it allows me to manually advance the clock one cycle. The green light indicates <b>astable</b> mode which means the clocks
+    advances on its own at the set frequency. <br><br>Below I will post an image of the schematic for the clock module. <b>This
+    schematic was made by Ben Eater and I have yet to make my own schematic for the one I designed.</b></p>
+
+    <picture>
+      <source media="(min-width: 480px)"
+               srcset="img/800_clock_schematic.jpg 1200w,
+                       img/400_clock_schematic.jpg 800w"
+               sizes="60vw">
+      <img src="img/200_clock_schematic.jpg" alt="Clock Module Schematic by Ben Eater">
+    </picture>
+    <em>Figure 2 - Clock module schematic by Ben Eater</em>
+
+    <h2 id="step2">Step 2: Registers (WIP)</h2>
+
+    <footer>
+      <small>ET 280 website project by Abel Medina. Last date modified 09/30/2020</small>
+    </footer>
+  </body>
+</html>
