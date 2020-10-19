@@ -10,6 +10,10 @@
     text-align: right;
 }
 
+ol {
+  list-style-type: upper-roman;
+}
+
 a {
   color: white;
   font-family: Orbitron;
