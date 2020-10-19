@@ -33,15 +33,29 @@
     </div>
 
     <header>
-      <table className="padding-table-columns" id="orb">
-        <tr>
-          <th><a href="index.html">Home</a></th>
-          <th><a href="blog.html">Blog</a></th>
-          <th><a href="about.html">About</a></th>
-          <th><a href="projects.html">Projects</a></th>
-          <th><a href="contact.html">Contact</a></th>
-        </tr>
-      </table>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <div class="subnav">
+          <button class="subnavbtn">Projects<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="projects.html">Projects Home Page</a>
+            <a href="cpuproject.html">8-Bit CPU Project</a>
+            <a href="#6502pro">6502 Computer Project</a>
+            <a href="#gpufromscratch">GPU from scratch</a>
+            <a href="#errordet">Error Detection</a>
+            <a href="#ww2tank">WW2 RC tank</a>
+            <a href="#gamedesigns">Game Design projects</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">About<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="about.html">About This Page</a>
+            <a href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
 
     <h1 class="glow-purple">8-Bit CPU Project</h1>
     <p>Jump to certain steps here!</p>
@@ -91,7 +105,7 @@
     <div class="particle"></div>
     <div class="particle"></div>
     </div>
-    
+
     <table id="color-white-text">
       <tr>
         <th></th>
@@ -166,7 +180,7 @@
     <h2 id="step2" class="glow-rusty-red">Step 2: Registers (WIP)</h2>
 
     <footer>
-      <small>ET 280 website project by Abel Medina. Last date modified 09/30/2020</small>
+      <small>ET 280 website project by Abel Medina. Last date modified 10/19/2020</small>
     </footer>
   </body>
 </html>

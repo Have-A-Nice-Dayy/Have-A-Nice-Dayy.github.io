@@ -42,15 +42,29 @@
     </div>
 
     <header>
-      <table className="padding-table-columns" id="orb">
-        <tr>
-          <th><a href="index.html">Home</a></th>
-          <th><a href="blog.html">Blog</a></th>
-          <th><a href="about.html">About</a></th>
-          <th><a href="projects.html">Projects</a></th>
-          <th><a href="contact.html">Contact</a></th>
-        </tr>
-      </table>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <div class="subnav">
+          <button class="subnavbtn">Projects<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="projects.html">Projects Home Page</a>
+            <a href="cpuproject.html">8-Bit CPU Project</a>
+            <a href="#6502pro">6502 Computer Project</a>
+            <a href="#gpufromscratch">GPU from scratch</a>
+            <a href="#errordet">Error Detection</a>
+            <a href="#ww2tank">WW2 RC tank</a>
+            <a href="#gamedesigns">Game Design projects</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">About<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="about.html">About This Page</a>
+            <a href="contact.html">Contact Me</a>
+          </div>
+        </div>
+      </div>
 
     <h1 class="glow-purple">Home</h1>
     </header>
@@ -66,7 +80,7 @@
    and Python. More Info on these projects can be found on my <a href="projects.html">projects</a> page</p>
 
     <footer>
-      <small>ET 280 website project by Abel Medina. Last date modified 09/29/2020</small>
+      <small>ET 280 website project by Abel Medina. Last date modified 10/19/2020</small>
     </footer>
   </body>
 </html>
