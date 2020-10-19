@@ -1,0 +1,70 @@
+#f14 {
+    font-size: 14px;
+}
+
+#f20 {
+    font-size: 20px;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#center {
+    text-align: center;
+}
+
+#right {
+    text-align: right;
+}
+
+a {
+  color: white;
+  font-family: Orbitron;
+}
+
+h1, em, #color-white-text {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.padding-table-columns th {
+    padding:0 5px 0 0; /* Only right padding*/
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('fonts/orbitron-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#orb {
+    font-family: Orbitron;
+}
+
+p, small {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.glow-purple {
+  font-family: Orbitron;
+  font-size: 80px;
+  color: #fff;
+
+  text-shadow: 0 0 10px #9730ba, 0 0 20px #9730ba, 0 0 30px #9730ba, 0 0 40px #9730ba, 0 0 50px #9730ba, 0 0 60px #9730ba;
+}
+
+.glow-rusty-red {
+  font-family: Orbitron;
+  font-size: 30px;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 0 10px #da2c43, 0 0 20px #da2c43, 0 0 30px #da2c43;
+}
+
+body {
+    background: #161532;
+}

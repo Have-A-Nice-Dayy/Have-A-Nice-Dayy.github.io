@@ -2,23 +2,54 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/particles.css">
     <title>8-Bit CPU project!</title>
   </head>
   <body>
+
+    <div id="particle-container">
+
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
     <header>
-      <h1>8-Bit CPU project!</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <p>Jump to certain steps here!</p>
-      <a href="#step1">Step 1</a> <br>
-      <a href="#step2">Step 2</a>
+      <table className="padding-table-columns" id="orb">
+        <tr>
+          <th><a href="index.html">Home</a></th>
+          <th><a href="blog.html">Blog</a></th>
+          <th><a href="about.html">About</a></th>
+          <th><a href="projects.html">Projects</a></th>
+          <th><a href="contact.html">Contact</a></th>
+        </tr>
+      </table>
+
+    <h1 class="glow-purple">8-Bit CPU Project</h1>
+    <p>Jump to certain steps here!</p>
+    <a href="#step1" id="orb">Step 1</a> <br>
+    <a href="#step2" id="orb">Step 2</a>
     </header>
-    <h2>The start</h2>
+
+    <h2 class="glow-rusty-red">The start</h2>
     <p>I began by getting inspiration and basic knowledge of mechatronics from my NMSU ET 182 course. Once
     I had my basics down I immiedietly threw myself into the very advanced portion of mechatronics, which
     was very confusing but I was able to learn about each chip I used. <strong>Ben Eater</strong> is very
@@ -26,9 +57,42 @@
     guide that was involving the 8 bit CPU and below I made a table with the chips I used for a specific module.
     <br><br><b>Note that each chip will have a link to the datasheet for more specific information!</b></p>
 
-    <h2 id="step1">Step 1: Clock Module</h2>
+    <h2 id="step1" class="glow-rusty-red">Step 1: Clock Module</h2>
     <em>Chips used for this module.</em>
-    <table>
+    <div id="particle-container">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    </div>
+    
+    <table id="color-white-text">
       <tr>
         <th></th>
         <th><a href="https://www.futurlec.com/74LS/74LS04.shtml" target="_blank">74LS04(NOT)</a></th>
@@ -90,6 +154,7 @@
     advances on its own at the set frequency. <br><br>Below I will post an image of the schematic for the clock module. <b>This
     schematic was made by Ben Eater and I have yet to make my own schematic for the one I designed.</b></p>
 
+
     <picture>
       <source media="(min-width: 480px)"
                srcset="img/800_clock_schematic.jpg 1200w,
@@ -98,8 +163,7 @@
       <img src="img/200_clock_schematic.jpg" alt="Clock Module Schematic by Ben Eater">
     </picture>
     <em>Figure 2 - Clock module schematic by Ben Eater</em>
-
-    <h2 id="step2">Step 2: Registers (WIP)</h2>
+    <h2 id="step2" class="glow-rusty-red">Step 2: Registers (WIP)</h2>
 
     <footer>
       <small>ET 280 website project by Abel Medina. Last date modified 09/30/2020</small>
